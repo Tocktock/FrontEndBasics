@@ -1,0 +1,37 @@
+body {
+  background-color: black;
+  width: 100vw;
+  height: 100vh;
+}
+
+.target {
+  position: fixed;
+  display: inline-block;
+  transform: translate(-50%, -50%);
+}
+
+img {
+  width: 60px;
+  height: 60px;
+}
+
+.line__column {
+  position: fixed;
+  width: 4px;
+  height: 100vh;
+  background-color: white;
+}
+.line__row {
+  position: fixed;
+  width: 100vw;
+  height: 4px;
+  background-color: white;
+}
+
+.pos__xy {
+  text-align: center;
+  color: white;
+  position: fixed;
+  width: 120px;
+  height: 30px;
+}
