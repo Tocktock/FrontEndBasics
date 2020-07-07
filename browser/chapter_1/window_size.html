@@ -21,6 +21,10 @@
       <h4 class="height"></h4>
     </div>
     <script>
+      // outer is whole size of the brower included url section and etc
+      // inner is section that inside of outer excluded url section and etc. only contents
+      // screen is whole size of the window and fixed
+
       const screen = document.querySelector(".screen");
       const inner = document.querySelector(".inner");
       const height = document.querySelector(".height");
@@ -29,6 +33,7 @@
         inner.innerHTML = `Window Inner Size : ${window.innerWidth}, ${window.innerHeight}`;
         height.innerHTML = `Window Outer Size : ${window.outerWidth}, ${window.outerHeight}`;
       };
+
       window.addEventListener("resize", updateFucn);
       updateFucn();
     </script>
