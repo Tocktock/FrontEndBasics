@@ -1,0 +1,36 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Window Size</title>
+    <style>
+      .tag {
+        display: inine-block;
+        background-color: thistle;
+        opacity: 0.5;
+        padding: 16px;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tag">
+      <h1>Window Size</h1>
+      <h2 class="screen"></h2>
+      <h3 class="inner"></h3>
+      <h4 class="height"></h4>
+    </div>
+    <script>
+      const screen = document.querySelector(".screen");
+      const inner = document.querySelector(".inner");
+      const height = document.querySelector(".height");
+      const updateFucn = () => {
+        screen.innerHTML = `Window Screen Size : ${window.screen.width}, ${window.screen.height}`;
+        inner.innerHTML = `Window Inner Size : ${window.innerWidth}, ${window.innerHeight}`;
+        height.innerHTML = `Window Outer Size : ${window.outerWidth}, ${window.outerHeight}`;
+      };
+      window.addEventListener("resize", updateFucn);
+      updateFucn();
+    </script>
+  </body>
+</html>
