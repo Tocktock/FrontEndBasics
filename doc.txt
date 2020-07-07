@@ -1,0 +1,31 @@
+심심하실때 읽어 보세요 ❤️
+
+MDN Web API:
+
+https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Client-side_web_APIs/Introduction
+
+Web API collection:
+
+https://developer.mozilla.org/en-US/docs/Web/API
+
+Security:
+
+https://www.thoughtco.com/what-javascript-cannot-do-2037666
+
+심심하실때 읽어 보세요 ❤️ 
+
+Document
+
+https://developer.mozilla.org/en-US/docs/Web/API/Document
+
+Window
+
+https://developer.mozilla.org/en-US/docs/Web/API/Window
+
+Viewport
+
+https://developer.mozilla.org/en-US/docs/Glossary/layout_viewport
+
+Navigator
+
+https://developer.mozilla.org/en-US/docs/Web/API/Navigator
