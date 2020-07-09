@@ -1,13 +1,13 @@
 body {
+  margin: 0px;
   background-color: black;
   width: 100vw;
   height: 100vh;
 }
 
 .target {
-  position: fixed;
+  position: absolute;
   display: inline-block;
-  transform: translate(-50%, -50%);
 }
 
 img {
@@ -16,22 +16,22 @@ img {
 }
 
 .line__column {
-  position: fixed;
-  width: 4px;
+  position: absolute;
+  width: 1px;
   height: 100vh;
   background-color: white;
 }
 .line__row {
-  position: fixed;
+  position: absolute;
   width: 100vw;
-  height: 4px;
+  height: 1px;
   background-color: white;
 }
 
 .pos__xy {
   text-align: center;
   color: white;
-  position: fixed;
+  position: absolute;
   width: 120px;
   height: 30px;
 }

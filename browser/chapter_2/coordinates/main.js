@@ -18,12 +18,17 @@ body.appendChild(borderColumn);
 body.appendChild(borderRow);
 body.appendChild(posXY);
 
+const rect = target.getBoundingClientRect();
+const adjustSize = rect.width / 2;
+
 body.addEventListener("mousemove", (e) => {
-  target.style.left = e.clientX + "px";
-  target.style.top = e.clientY + "px";
-  borderColumn.style.left = e.clientX - 2 + "px";
-  borderRow.style.top = e.clientY - 2 + "px";
-  posXY.innerHTML = `${e.clientX}px, ${e.clientY}px`;
-  posXY.style.left = e.clientX + "px";
-  posXY.style.top = e.clientY + "px";
+  const x = e.clientX;
+  const y = e.clientY;
+  target.style.transform = `translate(${x - adjustSize}px, ${
+    y - adjustSize
+  }px)`;
+  borderColumn.style.transform = `translateX(${x}px)`;
+  borderRow.style.transform = `translateY(${y}px)`;
+  posXY.innerText = `${e.clientX}px, ${e.clientY}px`;
+  posXY.style.transform = `translate(${x}px, ${y}px)`;
 });
