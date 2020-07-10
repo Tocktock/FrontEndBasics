@@ -1,0 +1,83 @@
+body {
+  background-color: lightpink;
+}
+
+#app {
+  width: 300px;
+  height: 400px;
+  position: fixed;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  flex-direction: column;
+  justify-content: center;
+}
+
+.head {
+  border-radius: 20px 20px 0 0;
+  background: rgb(187, 184, 240);
+  background: linear-gradient(
+    332deg,
+    rgba(187, 184, 240, 1) 0%,
+    rgba(121, 121, 215, 1) 40%,
+    rgba(51, 195, 224, 1) 100%
+  );
+  width: 100%;
+  height: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.body {
+  overflow-y: auto;
+  width: 100%;
+  height: 75%;
+  background-color: whitesmoke;
+}
+
+.body__content {
+  padding: 5px;
+  margin: 0px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.body__content__delete {
+  cursor: pointer;
+}
+
+.input {
+  height: 5%;
+}
+input {
+  height: 100%;
+  width: 100%;
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+
+.create {
+  background: rgb(187, 184, 240);
+  background: linear-gradient(
+    332deg,
+    rgba(187, 184, 240, 1) 0%,
+    rgba(121, 121, 215, 1) 40%,
+    rgba(51, 195, 224, 1) 100%
+  );
+  width: 100%;
+  height: 10%;
+  border-radius: 0 0 20px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.create i {
+  cursor: pointer;
+  font-size: 30px;
+}

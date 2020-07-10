@@ -1,0 +1,18 @@
+1. function
+    create - function
+    read - div
+    update - function
+    delete - function
+
+2. UI
+    div 
+        head
+            span
+        body
+            div
+                span
+                icon
+        input
+        create
+            imgcenter
+    div
