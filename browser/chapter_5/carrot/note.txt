@@ -1,0 +1,10 @@
+function 
+    Obj
+        1. carrot -> create, delete
+            create : think of layer
+            click -> delete : just delete and count
+        2. bug ->create, delete, click
+            create : think of layer
+            click -> game over
+        3. time -> update
+    
